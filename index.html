@@ -4,18 +4,81 @@
 	<title>Dark Forest Tutorial</title>
 	<style>
 		body {
-			font-size:16pt;
+			font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			font-size:12pt;
 			line-height:1.5em;
+			background:#4a5568;
+			color:white;
 		}
 		.container {
 			margin: 2em auto;
 			width:60%;
+			background:#1a202c;
+			padding:1em 2em;
+			border:1px solid white;
+			border-radius:3px;
+		}
+		a {
+			color:white;
+			text-decoration: underline;
+		}
+		li.indent {
+			margin-left:1.5em;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<p>Welcome to the Dark Forest tutorial!</p>
+		<h2>Welcome to the Dark Forest tutorial!</h2>
+		<p>Dark Forest is a game built using the EVM and <a href="https://z.cash/technology/zksnarks/">zkSNARKs</a>.</p>
+
+		<h2>Getting Started</h2>
+
+		<p>Connect to Ropsten on MetaMask and load up <a href="http://zkga.me">http://zkga.me</a>. If you are participating in the contest, please also fill out <a href="https://forms.gle/dwH1nQaymhSgmfrj8">this Google form</a>.</p>
+
+		<h2>Contest Rules</h2>
+
+		<p>A pool of e (2.718) ETH will be distributed at the end of 48 hours based on the following calculations:</p>
+
+		<ul>
+			<li>Reward for playing:</li>
+			<li class="indent">reward = (forces_owned / total_forces) * 2.718 ETH</li>
+			<li>Transaction cost: </li>
+			<li class="indent">cost = number_transactions * 0.25 USD</li>
+			<li>Total prize:</li>
+			<li class="indent">sum = max(reward - cost, 0)</li>
+		</ul>
+
+		<p>We encourage you to be hacky, and to write code to gain an advantage. However, any hacks against the spirit of the game (please use sensible discretion) may be grounds for disqualification.</p>
+
+		<h2>How to Play</h2>
+
+		<p>You will be spawned at a home planet at a random location in the universe. </p>
+		<ul>
+			<li><u>Click-and-drag</u> from one planet to another to send forces.</li>
+			<li><u>Click-and-drag</u> on the map to pan around.</li>
+			<li><u>Scroll</u> to zoom in and out.</li>
+		</ul>
+
+		<p>You can move forces from one of your own planets to another, conquer undiscovered planets, or attack enemy planets. Attacking enemy planets enough will allow you to conquer them.</p>
+
+		<h2>Planet Details</h2>
+
+		<p>Planets you own are denoted with a blue ring. Enemy planets have a red ring.</p>
+
+		<ul>
+			<li>Capacity: total # of forces that can be occupied on this planet</li>
+			<li>Growth: represents maximum growth rate</li>
+			<li>Attack: how much damage per unit of forces attacks from this planet do</li>
+			<li>Defense: how resistant your planet is to enemy attacks</li>
+		</ul>
+
+		<p>Larger planets have higher attack, smaller planets have higher defense.</p>
+
+		<h2>Miners</h2>
+
+
+		<h2>Hints</h2>
 	</div>
 </body>
 </html>
